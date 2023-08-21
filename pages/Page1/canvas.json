@@ -78,24 +78,13 @@
               "triggeredItemView": "{{{}}}",
               "widgetName": "List1",
               "requiresFlatWidgetChildren": true,
-              "listData": [
+              "listData": "{{Api1.data}}",
+              "isCanvas": true,
+              "dynamicPropertyPathList": [
                 {
-                  "id": "001",
-                  "name": "Blue",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "002",
-                  "name": "Green",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
-                },
-                {
-                  "id": "003",
-                  "name": "Red",
-                  "img": "https://assets.appsmith.com/widgets/default.png"
+                  "key": "listData"
                 }
               ],
-              "isCanvas": true,
               "displayName": "List",
               "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
               "topRow": 14,
@@ -110,6 +99,7 @@
               "animateLoading": true,
               "primaryKeys": "{{List1.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
               "parentColumnSpace": 20.0625,
+              "dynamicTriggerPathList": [],
               "dynamicBindingPathList": [
                 {
                   "key": "currentItemsView"
@@ -131,6 +121,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "listData"
                 }
               ],
               "leftColumn": 0,
@@ -188,13 +181,22 @@
                       "children": [
                         {
                           "widgetName": "Canvas2",
+                          "isDeprecated": false,
+                          "detachFromLayout": true,
                           "displayName": "Canvas",
+                          "widgetId": "l0nbfapvk4",
                           "topRow": 0,
                           "bottomRow": 120,
+                          "containerStyle": "none",
                           "parentRowSpace": 1,
+                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
+                          "version": 1,
                           "hideCard": true,
+                          "parentId": "305qvhf3dn",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
@@ -362,16 +364,7 @@
                               "minDynamicHeight": 4
                             }
                           ],
-                          "key": "3glyo6g9m0",
-                          "isDeprecated": false,
-                          "detachFromLayout": true,
-                          "widgetId": "l0nbfapvk4",
-                          "containerStyle": "none",
-                          "isVisible": true,
-                          "version": 1,
-                          "parentId": "305qvhf3dn",
-                          "renderMode": "CANVAS",
-                          "isLoading": false
+                          "key": "3glyo6g9m0"
                         }
                       ],
                       "borderWidth": "1",
@@ -567,7 +560,18 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Api1",
+              "name": "Api1",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",

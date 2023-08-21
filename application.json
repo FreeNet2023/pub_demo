@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "id": "Page1",
+      "isDefault": true
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F1DEFF",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "viewerLayout": "{\"color\":\"#553DE9\",\"logoUrl\":\"\",\"name\":\"Demo002\",\"treeData\":[{\"title\":\"Page1\",\"pageId\":\"64e30edaf860a8383eb7d1f7\",\"isPage\":true}],\"outsiderTree\":[]}",
+  "deleted": false
+}
